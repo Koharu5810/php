@@ -1,0 +1,46 @@
+/* 時計表示ページの装飾 */
+.result__content {
+    margin: 0 auto;
+    padding: 60px 15px;
+    max-width: 1230px;
+}
+
+.result-cards {
+    display: flex;
+    justify-content: center;
+}
+
+.result-card {
+    margin: 0 20px;
+    width: 360px;
+    border-radius: 3px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .15);
+}
+
+.result-card__img-wrapper {
+    position: relative;
+    padding-top: 56.25%;
+}
+
+.result-card__img {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    /* 要素を垂直方向に中央揃えしたいときによく使用される。例えば、親要素に対して絶対配置 (position: absolute; ) された子要素を垂直中央に配置するために使われる。
+    Y軸方向 (上下方向) に要素を移動。-50%は、要素の高さの 50% 分だけ上に移動させることを意味する。
+    垂直方向の中央揃えを行いたいときによく使用されるテクニック。 */
+    transform: translateY(-50%);
+}
+
+.result-card__body {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.result-card__city,
+.result-card__time {
+    margin: 0;
+    font-size: 18px;
+}

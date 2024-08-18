@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- POST送信 -->
+    <div>POST送信</div>
+    <!-- action属性は遷移するファイル名を指定 -->
+    <form action="course.php" method="POST">
+        <!-- name属性で指定した名前が受け取るときの＄＿POSTの添字となる -->
+        <label>会社名: <input type="text" name="company"></label>
+        <br>
+        <input type="submit" name="submit" value="送信する" />
+    </form>
+
+    <br><br><br><br>
+
+<!-- GET送信 -->
+    <div>GET送信</div>
+    <form action="course.php" method="GET">
+        <label>会社名: <input type="text" name="company"></label>
+        <br>
+        <input type="submit" name="submit" value="送信する" />
+    </form>
+</body>
+</html>

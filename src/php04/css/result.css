@@ -1,0 +1,46 @@
+.result__content {
+    margin: 0 auto;
+    padding: 60px 15px;
+    max-width: 1230px;
+}
+
+.result {
+    text-align: center;
+}
+
+.result__text--correct {
+    color: #ff0000;
+}
+
+.result__text--incorrect {
+    color: #0000ff;
+}
+
+.answer-table {
+    border: 1px solid #ddd;
+}
+
+.answer-table__inner {
+    width: 100%;
+}
+
+.answer-table__header {
+    padding: 15px;
+    width: 20%;
+    border-bottom: 1px solid #ddd;
+    background-color: #eee;
+    font-weight: bold;
+}
+
+.answer-table__text {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* 特定のテーブルの行に対してスタイルを適用。特に、テーブルの最後の行 (last-child) の一部の要素に対して、下部のボーダーの幅を 0 に設定することで、ボーダーを消す役割を果たしている。 */
+/* .answer-table__row: テーブルの行に対応するクラス。例えば、<tr>タグやそれに相当する要素に適用されていると考えられる。
+last-child: 親要素の最後の子要素をターゲットにする擬似クラス。この場合、最後の行に適用される。 */
+.answer-table__row:last-child .answer-table__heder,
+.answer-table__row:last-child .answer-table__text {
+    border-bottom-width: 0;
+}
